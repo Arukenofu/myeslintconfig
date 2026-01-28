@@ -1,0 +1,56 @@
+{
+  "name": "eslint-config-arukenofu",
+  "version": "1.0.0",
+  "description": "ESLint config for Vue 3 + TypeScript projects",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "vue",
+    "vue3",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arukenofu/myeslintconfig.git"
+  },
+  "author": "Arukenofu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arukenofu/myeslintconfig/issues"
+  },
+  "homepage": "https://github.com/Arukenofu/myeslintconfig#readme",
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^5.7.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-vue": "^10.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "vite": "^8.0.0-beta.10",
+    "vite-plugin-dts": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
